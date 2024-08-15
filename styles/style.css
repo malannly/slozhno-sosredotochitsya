@@ -246,7 +246,7 @@ color: var(--main-text-color);
   width: 25px;
   height: 25px;
   right: 10px;
-  top: 10px; 
+  top: 10px;
 }
 
 .footer::after {
@@ -399,7 +399,7 @@ color: var(--main-text-color);
       width: 25px;
       height: 25px;
       right: 20px;
-      top: 20px; 
+      top: 20px;
     }
     
     .footer::after {
@@ -499,12 +499,6 @@ color: var(--main-text-color);
     gap: 80px;
     }
 
-  .main .section:nth-child(odd) {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-  }
-
   .main .section:nth-of-type(2) {
     display: grid;
     grid-template-rows: min-content max-content;
@@ -580,7 +574,7 @@ color: var(--main-text-color);
     width: 25px;
     height: 25px;
     right: 20px;
-    top: 20px; 
+    top: 20px;
   }
 
   .footer::after {
