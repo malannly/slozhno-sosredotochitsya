@@ -45,6 +45,14 @@
   display: none;
 }
 
+.page.theme_light .rec_heading::before {
+  content: '';
+}
+
+.page.theme_light .rec_heading::after {
+  content: '';
+}
+
 .page.theme_light .title-decor {
   color: var(--text-color);
   background-color: var(--accent-color);
