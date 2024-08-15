@@ -1,20 +1,33 @@
 :root .theme_light {
-  --title-color: rgba(255, 194, 230, 1);
-  --accent-color: rgba(255, 141, 203, 1);
-  --text-color: rgba(53, 52, 48, 1);
-  --button-active: rgba(50, 49, 45, 0.4);
-  --link-shadow: rgba(255, 141, 203, 1);
   --background-img: url(../images/cover-image-light.png);
+  --hdr-ftr-title: rgba(255, 194, 230, 1);
+  --hdr-ftr-shadow: rgba(255, 0, 112, 1);
+  --hdr-menu: rgba(53, 52, 48, 1);
+  --decor-zone-bck: rgba(255, 141, 203, 1);
+  --decor-zone-text: rgba(53, 52, 48, 1);
+  --section-title: rgba(53, 52, 48, 1);
+  --main-text: rgba(53, 52, 48, 1);
+  --link-shadow: rgba(255, 141, 203, 1);
+  --link-effects: rgba(53, 52, 48, 1);
+  --button-effects: rgba(50, 49, 45, 1);
+  --button-effects-hover: rgba(50, 49, 45, 0.4);
 }
 
 @media (prefers-color-scheme: light) {
-    :root {
-        --title-color: rgba(255, 194, 230, 1);
-        --accent-color: rgba(255, 141, 203, 1);
-        --background-color: rgba(255, 141, 203, 1);
-        --text-color: rgba(53, 52, 48, 1);
-        --background-img: url(../images/cover-image-light.png);
-    }
+  :root {
+    --background-img: url(../images/cover-image-light.png);
+    --hdr-ftr-title: rgba(255, 194, 230, 1);
+    --hdr-ftr-shadow: rgba(255, 0, 112, 1);
+    --hdr-menu: rgba(53, 52, 48, 1);
+    --decor-zone-bck: rgba(255, 141, 203, 1);
+    --decor-zone-text: rgba(53, 52, 48, 1);
+    --section-title: rgba(53, 52, 48, 1);
+    --main-text: rgba(53, 52, 48, 1);
+    --link-shadow: rgba(255, 141, 203, 1);
+    --link-effects: rgba(53, 52, 48, 1);
+    --button-effects: rgba(50, 49, 45, 1);
+    --button-effects-hover: rgba(50, 49, 45, 0.4);
+  }
 }
 
 .page.theme_light {
@@ -27,85 +40,82 @@
 } 
     
 .page.theme_light .heading {
-  color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  color: var(--hdr-ftr-title);
+  text-shadow: 4px 4px 0 var(--hdr-ftr-shadow);
 }
 
 .page.theme_light .header::before {
-  border-top: 1px solid var(--text-color);
-  border-right: 1px solid var(--text-color);
+  border-top: 1px solid var(--hdr-menu);
+  border-right: 1px solid var(--hdr-menu);
 }
     
 .page.theme_light .header::after {
-  border-bottom: 1px solid var(--text-color);
-  border-left: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--hdr-menu);
+  border-left: 1px solid var(--hdr-menu);
 }
 
 .page.theme_light .rec_heading {
+  position: absolute;
+}
+
+.page.theme_light .rec_heading {
+  position: absolute;
   display: none;
 }
 
-.page.theme_light .rec_heading::before {
-  content: '';
-}
-
-.page.theme_light .rec_heading::after {
-  content: '';
-}
-
 .page.theme_light .title-decor {
-  color: var(--text-color);
-  background-color: var(--accent-color);
+  color: var(--decor-zone-text);
+  background-color: var(--decor-zone-bck);
 }
 
 .page.theme_light .header__theme-menu-button {
-  color: var(--text-color);
+  color: var(--hdr-menu);
 }
 
 .page.theme_light .header__theme-menu-button:hover {
-  outline: 1px solid var(--button-active);
+  outline: 1px solid var(--button-effects-hover);
 }
   
 .page.theme_light .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--button-active);
+  border-block-end: 1px solid var(--button-effects);
 }
 
 .page.theme_light .header__theme-menu-button_active {
   pointer-events: none;
-  border: 1px solid var(--button-active);
+  border: 1px solid var(--button-effects);
 }
 
 .page.theme_light .title-main {
-  color: var(--text-color);
+  color: var(--section-title);
 }
     
 .page.theme_light .text-content {
-  color: var(--text-color);
+  color: var(--main-text);
 }
     
 .page.theme_light .span-link {
   text-shadow: 2px 2px 0 var(--link-shadow);
 }
 
-.page.theme_light  .link {
-  color: var(--text-color);
+.page.theme_light .span-link {
+  text-shadow: 2px 2px 0 var(--link-shadow);
 }
     
 .page.theme_light .link:focus-visible {
-  outline: 1px solid var(--text-color);
+  outline: 1px solid var(--link-effects);
 }
 
 .page.theme_light .footer-title {
-  color: var(--title-color);
-  text-shadow: 2px 2px 0px var(--accent-color);
+  color: var(--hdr-ftr-title);
+  text-shadow: 2px 2px 0px var(--hdr-ftr-shadow);
 }
     
 .page.theme_light .footer::before {
-  border-top: 1px solid var(--text-color);
-  border-right: 1px solid var(--text-color);
+  border-top: 1px solid var(--hdr-menu);
+  border-right: 1px solid var(--hdr-menu);
 }
     
 .page.theme_light .footer::after {
-  border-bottom: 1px solid var(--text-color);
-  border-left: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--hdr-menu);
+  border-left: 1px solid var(--hdr-menu);
 }
