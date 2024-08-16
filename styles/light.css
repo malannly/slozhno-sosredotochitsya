@@ -31,12 +31,7 @@
 }
 
 .page.theme_light {
-  background-attachment: fixed;
   background-image: var(--background-img);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-family: 'IBM Plex Mono', sans-serif;
 } 
     
 .page.theme_light .heading {
@@ -52,10 +47,6 @@
 .page.theme_light .header::after {
   border-bottom: 1px solid var(--hdr-menu);
   border-left: 1px solid var(--hdr-menu);
-}
-
-.page.theme_light .rec_heading {
-  position: absolute;
 }
 
 .page.theme_light .rec_heading {
@@ -93,10 +84,6 @@
   color: var(--main-text);
 }
     
-.page.theme_light .span-link {
-  text-shadow: 2px 2px 0 var(--link-shadow);
-}
-
 .page.theme_light .span-link {
   text-shadow: 2px 2px 0 var(--link-shadow);
 }

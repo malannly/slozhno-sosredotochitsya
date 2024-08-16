@@ -26,17 +26,12 @@
     --link-shadow: rgba(255, 0, 112, 1);
     --link-effects: rgba(241, 178, 206, 1);
     --button-effects:rgba(255, 0, 112, 1);
-    --button-effects-hover: rgba(255, 0, 112, 0.4)
+    --button-effects-hover: rgba(255, 0, 112, 0.4);
   }
 }
 
 .page.theme_dark {
-  background-attachment: fixed;
   background-image: var(--background-img);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-family: 'IBM Plex Mono', sans-serif;
 }
 
 .page.theme_dark .heading {
@@ -112,10 +107,6 @@
   color: var(--main-text);
 }
     
-.page.theme_dark .span-link {
-  text-shadow: 2px 2px 0 var(--link-shadow);
-}
-
 .page.theme_dark .span-link {
   text-shadow: 2px 2px 0 var(--link-shadow);
 }

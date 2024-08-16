@@ -26,7 +26,7 @@
     --link-shadow: rgba(255, 0, 112, 1);
     --link-effects: rgba(241, 178, 206, 1);
     --button-effects:rgba(255, 0, 112, 1);
-    --button-effects-hover: rgba(255, 0, 112, 0.4)
+    --button-effects-hover: rgba(255, 0, 112, 0.4);
   }
 }
 
